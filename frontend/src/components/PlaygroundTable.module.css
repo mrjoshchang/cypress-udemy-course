@@ -1,0 +1,26 @@
+/* styles.css or your preferred CSS file */
+.table-container {
+  display: flex;
+  justify-content: center;
+}
+
+.table {
+  width: 40%;
+  border-collapse: collapse;
+}
+
+.table th {
+  border: 1px solid #ccc; /* Add borders to table cells */
+  padding: 4px; /* Add padding for cell content */
+  text-align: center;
+  background-color: blue;
+  text-align: center; /* Optional: Add background color to header row */
+}
+
+.table td {
+  border: 1px #ccc; /* Add borders to table cells */
+  padding: 4px; /* Add padding for cell content */
+  text-align: center;
+}
+
+/* Add additional styling as needed */
