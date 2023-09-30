@@ -1,0 +1,10 @@
+{
+  "Click Me": "button:contains('Click Me')",
+  "Right Click Me": "button:contains('Right Click Me')",
+  "Double Click Me": "button:contains('Double Click Me')",
+  "Click Down On Me": "button:contains('Click Down On Me')",
+  "Hover Over Me": "button:contains('Hover Over Me')",
+  "Move Out Of Me": "button:contains('Move Out Of Me')",
+  "Move Around In Me": "button:contains('Move Around In Me')",
+  "Release Click On Me": "button:contains('Release Click On Me')"
+}

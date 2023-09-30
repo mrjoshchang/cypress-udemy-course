@@ -55,6 +55,10 @@
     "path": "playground/text",
     "regexp": "^/playground/text$"
   },
+  "playground/trigger": {
+    "path": "playground/trigger",
+    "regexp": "^/playground/trigger$"
+  },
   "playground/upload": {
     "path": "playground/upload",
     "regexp": "^/playground/upload$"

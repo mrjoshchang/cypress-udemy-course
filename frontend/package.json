@@ -45,7 +45,8 @@
     "@esbuild-plugins/node-modules-polyfill": "^0.2.2",
     "chai-sorted": "^0.2.0",
     "cypress": "^13.2.0",
-    "cypress-cucumber-preprocessor": "^4.3.1"
+    "cypress-cucumber-preprocessor": "^4.3.1",
+    "cypress-real-events": "^1.10.3"
   },
   "cypress-cucumber-preprocessor": {
     "stepDefinitions": [
