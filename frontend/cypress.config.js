@@ -28,4 +28,12 @@ module.exports = defineConfig({
       return config;
     },
   },
+
+  component: {
+    specPattern: "**/*.comp.js",
+    devServer: {
+      framework: "create-react-app",
+      bundler: "webpack",
+    },
+  },
 });
