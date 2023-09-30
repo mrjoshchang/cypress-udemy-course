@@ -1,0 +1,6 @@
+{
+  "Download Bulbasaur": "button[data-cy='Bulbasaur']",
+  "Download Charmander": "button[data-cy='Charmander']",
+  "Download Pikachu": "button[data-cy='Pikachu']",
+  "Download Squirtle": "button[data-cy='Squirtle']"
+}
