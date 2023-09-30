@@ -2,5 +2,9 @@
   "home": {
     "path": "/",
     "regexp": "^/$"
+  },
+  "playground/text": {
+    "path": "playground/text",
+    "regexp": "^/playground/text$"
   }
 }
