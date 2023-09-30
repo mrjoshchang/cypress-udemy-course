@@ -19,6 +19,14 @@
     "path": "playground/buttons",
     "regexp": "^/playground/buttons$"
   },
+  "playground/checkbox": {
+    "path": "playground/checkbox",
+    "regexp": "^/playground/checkbox$"
+  },
+  "playground/radio": {
+    "path": "playground/radio",
+    "regexp": "^/playground/radio$"
+  },
   "playground/text": {
     "path": "playground/text",
     "regexp": "^/playground/text$"
