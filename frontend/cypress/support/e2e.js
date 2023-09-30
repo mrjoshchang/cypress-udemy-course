@@ -14,7 +14,29 @@
 // ***********************************************************
 
 // Import commands.js using ES2015 syntax:
-import './commands'
+import "./commands";
 
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
+
+// cypress/support/e2e.ts
+beforeEach(function () {
+  const world = {
+    counter: 0,
+    foo: "",
+
+    setTo(varName, value) {
+      this[varName] = value;
+    },
+
+    incrementBy(varName, number) {
+      this[varName] += number;
+    },
+
+    decrementBy(varName, number) {
+      this[varName] = this[varName] - number;
+    },
+  };
+
+  Object.assign(this, world);
+});
