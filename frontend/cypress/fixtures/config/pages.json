@@ -47,6 +47,10 @@
     "path": "playground/scroll",
     "regexp": "^/playground/scroll$"
   },
+  "playground/table": {
+    "path": "playground/table",
+    "regexp": "^/playground/table$"
+  },
   "playground/text": {
     "path": "playground/text",
     "regexp": "^/playground/text$"
