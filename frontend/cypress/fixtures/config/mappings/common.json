@@ -1,0 +1,13 @@
+{
+  "primary header": "h1",
+  "secondary header": "h2",
+  "tertiary header": "h3",
+  "quaternary header": "h4",
+  "quinary header": "h5",
+  "senary header": "h6",
+  "nav link item": "nav ul li a",
+  "button": "button",
+  "link": "a",
+  "paragraph": "p",
+  "div": "div"
+}
