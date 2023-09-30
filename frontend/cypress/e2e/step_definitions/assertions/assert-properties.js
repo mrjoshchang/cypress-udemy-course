@@ -2,6 +2,18 @@ import { Then } from "@badeball/cypress-cucumber-preprocessor";
 import { getElementLocator } from "../../../util/element-helper";
 
 Then(
+  /^the "([^"]*)" (input|button|radio button|checkbox) should( not)? be enabled$/,
+  function (elementName, elementType, negate) {
+    getElementLocator(elementName);
+
+    cy.get("@elementLocator").should("exist", { timeout: 10000 });
+    cy.get("@elementLocator").then((element) => {
+      cy.get(element).should(`${negate ? "not." : ""}be.enabled`);
+    });
+  }
+);
+
+Then(
   /^the "([^"]*)" should( not)? have the "([^"]*)" css value "([^"]*)"$/,
   function (elementName, negate, cssName, cssValue) {
     getElementLocator(elementName);

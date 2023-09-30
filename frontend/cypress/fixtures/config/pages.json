@@ -15,6 +15,10 @@
     "path": "playground/attributes",
     "regexp": "^/playground/attributes$"
   },
+  "playground/buttons": {
+    "path": "playground/buttons",
+    "regexp": "^/playground/buttons$"
+  },
   "playground/text": {
     "path": "playground/text",
     "regexp": "^/playground/text$"
