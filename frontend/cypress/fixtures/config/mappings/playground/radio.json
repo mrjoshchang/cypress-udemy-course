@@ -1,0 +1,6 @@
+{
+  "Option 1": "input[value='option1']",
+  "Option 2": "input[value='option2']",
+  "Option 3": "input[value='option3']",
+  "selected option": "div[id='root'] main div div p"
+}
