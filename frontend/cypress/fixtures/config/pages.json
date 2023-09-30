@@ -27,6 +27,10 @@
     "path": "playground/downloads",
     "regexp": "^/playground/downloads$"
   },
+  "playground/dropdowns": {
+    "path": "playground/dropdowns",
+    "regexp": "^/playground/dropdowns$"
+  },
   "playground/radio": {
     "path": "playground/radio",
     "regexp": "^/playground/radio$"
