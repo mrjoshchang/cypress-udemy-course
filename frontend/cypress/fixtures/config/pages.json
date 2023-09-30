@@ -23,6 +23,10 @@
     "path": "playground/checkbox",
     "regexp": "^/playground/checkbox$"
   },
+  "playground/downloads": {
+    "path": "playground/downloads",
+    "regexp": "^/playground/downloads$"
+  },
   "playground/radio": {
     "path": "playground/radio",
     "regexp": "^/playground/radio$"
@@ -30,5 +34,9 @@
   "playground/text": {
     "path": "playground/text",
     "regexp": "^/playground/text$"
+  },
+  "playground/upload": {
+    "path": "playground/upload",
+    "regexp": "^/playground/upload$"
   }
 }
