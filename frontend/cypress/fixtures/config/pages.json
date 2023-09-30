@@ -3,6 +3,10 @@
     "path": "/",
     "regexp": "^/$"
   },
+  "playground": {
+    "path": "playground",
+    "regexp": "^/playground$"
+  },
   "playground/text": {
     "path": "playground/text",
     "regexp": "^/playground/text$"

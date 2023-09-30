@@ -7,7 +7,7 @@ export function getElementLocator(elementKey, elementAlias = "elementLocator") {
 
     cy.fixture("config/pages.json").then((pages) => {
       mapFile = Object.keys(pages).find((key) => {
-        return new RegExp(pages[key].regex).test(currentPage.pathname);
+        return new RegExp(pages[key].regexp).test(currentPage.pathname);
       });
 
       if (mapFile) {

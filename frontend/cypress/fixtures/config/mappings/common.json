@@ -9,5 +9,7 @@
   "button": "button",
   "link": "a",
   "paragraph": "p",
-  "div": "div"
+  "div": "div",
+
+  "Playground": "[data-cy='Playground']"
 }

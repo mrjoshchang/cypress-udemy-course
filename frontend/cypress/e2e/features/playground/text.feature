@@ -1,7 +1,11 @@
 Feature: Text validation
 
     Scenario: Verify the page text
-        Given I am on the "playground/text" page
+        Given I am on the "home" page
+        When I click the "Playground" link
+        And I am directed to the "playground" page
+        When I click the "text" link
+        And I am directed to the "playground/text" page
         Then the "primary header" should contain the text "A primary header"
         And the "secondary header" should contain the text "A secondary header"
         And the "tertiary header" should contain the text "A tertiary header"
