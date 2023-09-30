@@ -43,6 +43,10 @@
     "path": "playground/radio",
     "regexp": "^/playground/radio$"
   },
+  "playground/scroll": {
+    "path": "playground/scroll",
+    "regexp": "^/playground/scroll$"
+  },
   "playground/text": {
     "path": "playground/text",
     "regexp": "^/playground/text$"
