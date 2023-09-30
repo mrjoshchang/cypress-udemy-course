@@ -35,6 +35,10 @@
     "path": "playground/form",
     "regexp": "^/playground/form$"
   },
+  "playground/iframe": {
+    "path": "playground/iframe",
+    "regexp": "^/playground/iframe$"
+  },
   "playground/radio": {
     "path": "playground/radio",
     "regexp": "^/playground/radio$"
