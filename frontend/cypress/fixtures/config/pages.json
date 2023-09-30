@@ -1,0 +1,18 @@
+{
+  "home": {
+    "path": "/",
+    "regexp": "^/$"
+  },
+  "playground": {
+    "path": "playground",
+    "regexp": "^/playground$"
+  },
+  "playground/alerts": {
+    "path": "playground/alerts",
+    "regexp": "^/playground/alerts$"
+  },
+  "playground/text": {
+    "path": "playground/text",
+    "regexp": "^/playground/text$"
+  }
+}
