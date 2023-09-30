@@ -1,0 +1,54 @@
+{
+  "home": {
+    "path": "/",
+    "regexp": "^/$"
+  },
+  "playground": {
+    "path": "playground",
+    "regexp": "^/playground$"
+  },
+  "playground/alerts": {
+    "path": "playground/alerts",
+    "regexp": "^/playground/alerts$"
+  },
+  "playground/attributes": {
+    "path": "playground/attributes",
+    "regexp": "^/playground/attributes$"
+  },
+  "playground/buttons": {
+    "path": "playground/buttons",
+    "regexp": "^/playground/buttons$"
+  },
+  "playground/checkbox": {
+    "path": "playground/checkbox",
+    "regexp": "^/playground/checkbox$"
+  },
+  "playground/downloads": {
+    "path": "playground/downloads",
+    "regexp": "^/playground/downloads$"
+  },
+  "playground/dropdowns": {
+    "path": "playground/dropdowns",
+    "regexp": "^/playground/dropdowns$"
+  },
+  "playground/form": {
+    "path": "playground/form",
+    "regexp": "^/playground/form$"
+  },
+  "playground/iframe": {
+    "path": "playground/iframe",
+    "regexp": "^/playground/iframe$"
+  },
+  "playground/radio": {
+    "path": "playground/radio",
+    "regexp": "^/playground/radio$"
+  },
+  "playground/text": {
+    "path": "playground/text",
+    "regexp": "^/playground/text$"
+  },
+  "playground/upload": {
+    "path": "playground/upload",
+    "regexp": "^/playground/upload$"
+  }
+}
