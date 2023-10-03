@@ -5,9 +5,9 @@ Then(
   function (filename, expectedText) {
     cy.readFile(`cypress/downloads/${filename}`).should(
       "contain",
-      expectedText
+      expectedText,
     );
-  }
+  },
 );
 
 Then(/^the download "([^"]*)" should exist$/, function (filename) {

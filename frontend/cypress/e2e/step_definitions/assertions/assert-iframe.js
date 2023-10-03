@@ -17,7 +17,7 @@ Then(
           .should(`${negate ? "not." : ""}contain.text`, expectedText);
       });
     });
-  }
+  },
 );
 
 Then(
@@ -36,7 +36,7 @@ Then(
           .should(`${negate ? "not." : ""}have.text`, expectedText);
       });
     });
-  }
+  },
 );
 
 Then(
@@ -55,7 +55,7 @@ Then(
           .should(`${negate ? "not." : ""}contain.value`, expectedText);
       });
     });
-  }
+  },
 );
 
 Then(
@@ -74,5 +74,5 @@ Then(
           .should(`${negate ? "not." : ""}have.value`, expectedText);
       });
     });
-  }
+  },
 );

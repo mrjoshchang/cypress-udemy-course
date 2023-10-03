@@ -11,5 +11,5 @@ When(
       if (isChecked === "check") cy.get(element).check();
       if (isChecked === "uncheck") cy.get(element).uncheck();
     });
-  }
+  },
 );

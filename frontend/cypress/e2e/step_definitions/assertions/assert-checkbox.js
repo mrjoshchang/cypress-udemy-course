@@ -10,5 +10,5 @@ Then(
     cy.get("@elementLocator").then((element) => {
       cy.get(element).should(`${negate ? "not." : ""}be.checked`);
     });
-  }
+  },
 );

@@ -18,7 +18,7 @@ Then(
         }
       });
     });
-  }
+  },
 );
 
 Then(
@@ -51,17 +51,17 @@ Then(
 
             if (negate) {
               expect(JSON.stringify(actualTableRows)).to.not.include(
-                JSON.stringify(expectedRow)
+                JSON.stringify(expectedRow),
               );
             } else {
               expect(JSON.stringify(actualTableRows)).to.include(
-                JSON.stringify(expectedRow)
+                JSON.stringify(expectedRow),
               );
             }
           }
         });
     });
-  }
+  },
 );
 
 Then(
@@ -76,7 +76,7 @@ Then(
           if (sortType === "descending") expect(names).to.be.descending;
         });
       });
-  }
+  },
 );
 
 Then(
@@ -87,11 +87,11 @@ Then(
       .then((index) => {
         cy.get(`table td:nth-child(${index + 1})`).should(($cells) => {
           const names = Cypress._.map($cells, ($cell) =>
-            parseFloat($cell.innerText)
+            parseFloat($cell.innerText),
           );
           if (sortType === "ascending") expect(names).to.be.ascending;
           if (sortType === "descending") expect(names).to.be.descending;
         });
       });
-  }
+  },
 );

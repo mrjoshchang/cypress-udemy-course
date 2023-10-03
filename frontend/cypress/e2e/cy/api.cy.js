@@ -5,7 +5,7 @@ describe("Tasks @regression", () => {
         expect(status).to.eq(200);
         expect(body[0]).to.have.keys(["id", "task"]);
         cy.wrap(body.slice(-1)[0]).as("mostRecentTask");
-      }
+      },
     );
   });
 
@@ -14,7 +14,7 @@ describe("Tasks @regression", () => {
       ({ status, body }) => {
         expect(status).to.eq(200);
         expect(body[0]).to.have.keys(["id", "task"]);
-      }
+      },
     );
   });
 
@@ -50,7 +50,7 @@ describe("Tasks @regression", () => {
     cy.get("@mostRecentTask").then((task) => {
       cy.request(
         "DELETE",
-        `http://localhost:3001/playground/todos/${task.id}`
+        `http://localhost:3001/playground/todos/${task.id}`,
       ).then(({ status, body }) => {
         expect(status).to.eq(200);
         body.map((taskItem) => expect(taskItem.task).to.not.eq(task.task));

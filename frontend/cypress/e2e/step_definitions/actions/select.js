@@ -10,7 +10,7 @@ When(
     cy.get("@elementLocator").then((element) => {
       cy.get(element).select(option);
     });
-  }
+  },
 );
 
 When(
@@ -24,5 +24,5 @@ When(
     cy.get("@elementLocator").then((element) => {
       cy.get(element).select(options);
     });
-  }
+  },
 );

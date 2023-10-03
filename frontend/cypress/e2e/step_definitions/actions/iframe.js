@@ -17,7 +17,7 @@ When(
           .click();
       });
     });
-  }
+  },
 );
 
 When(
@@ -36,5 +36,5 @@ When(
           .type(inputTxt);
       });
     });
-  }
+  },
 );

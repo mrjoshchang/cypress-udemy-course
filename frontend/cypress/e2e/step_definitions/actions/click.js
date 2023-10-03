@@ -10,7 +10,7 @@ When(
     cy.get("@elementLocator").then((element) => {
       cy.get(element).click({ force: true });
     });
-  }
+  },
 );
 
 When(
@@ -23,7 +23,7 @@ When(
     cy.get("@elementLocator").then((element) => {
       cy.get(element).eq(index).click({ force: true });
     });
-  }
+  },
 );
 
 When(
@@ -35,7 +35,7 @@ When(
     cy.get("@elementLocator").then((element) => {
       cy.get(element).dblclick({ force: true });
     });
-  }
+  },
 );
 
 When(
@@ -47,7 +47,7 @@ When(
     cy.get("@elementLocator").then((element) => {
       cy.get(element).rightclick({ force: true });
     });
-  }
+  },
 );
 
 When(
@@ -60,5 +60,5 @@ When(
       cy.get(element).rightclick({ force: true });
       cy.get(element).rightclick({ force: true });
     });
-  }
+  },
 );

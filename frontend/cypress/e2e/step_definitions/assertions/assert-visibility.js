@@ -10,7 +10,7 @@ Then(
     cy.get("@elementLocator").then((element) => {
       cy.get(element).should(`${negate ? "not." : ""}be.visible`);
     });
-  }
+  },
 );
 
 Then(/^the "([^"]*)" should( not)? exist$/, function (elementName, negate) {

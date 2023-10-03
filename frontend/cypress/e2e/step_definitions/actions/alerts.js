@@ -13,7 +13,7 @@ When(
     cy.on("window:alert", (t) => {
       expect(t).to.equal(alertText);
     });
-  }
+  },
 );
 
 When(
@@ -29,7 +29,7 @@ When(
     cy.on("window:confirm", (t) => {
       expect(t).to.equal(alertText);
     });
-  }
+  },
 );
 
 When(
@@ -48,5 +48,5 @@ When(
         expect(t).to.equal(`You entered: ${promptInput}`);
       });
     });
-  }
+  },
 );

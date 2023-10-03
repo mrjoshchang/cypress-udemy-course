@@ -13,7 +13,7 @@ Then(
     cy.get("@elementLocator").then((element) => {
       cy.get(element).should(`${negate ? "not." : ""}have.attr`, expectedAttr);
     });
-  }
+  },
 );
 
 /**
@@ -29,10 +29,10 @@ Then(
       cy.get(element).should(
         `${negate ? "not." : ""}have.attr`,
         attributeName,
-        attributeValue
+        attributeValue,
       );
     });
-  }
+  },
 );
 
 Then(
@@ -48,10 +48,10 @@ Then(
         .should(
           `${negate ? "not." : ""}have.attr`,
           attributeName,
-          attributeValue
+          attributeValue,
         );
     });
-  }
+  },
 );
 
 /**
@@ -67,10 +67,10 @@ Then(
       cy.get(element).should(
         `${negate ? "not." : ""}have.css`,
         attributeName,
-        attributeValue
+        attributeValue,
       );
     });
-  }
+  },
 );
 
 Then(
@@ -86,8 +86,8 @@ Then(
         .should(
           `${negate ? "not." : ""}have.css`,
           attributeName,
-          attributeValue
+          attributeValue,
         );
     });
-  }
+  },
 );
