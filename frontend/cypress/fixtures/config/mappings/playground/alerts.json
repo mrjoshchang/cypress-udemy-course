@@ -1,0 +1,5 @@
+{
+  "Show Alert": "button[data-cy='show-alert']",
+  "Show Confirmation Prompt": "button[data-cy='show-confirmation-alert']",
+  "Show Prompt Alert": "button[data-cy='show-prompt-alert']"
+}
