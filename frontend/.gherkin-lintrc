@@ -1,0 +1,64 @@
+{
+  "allowed-tags": [
+    "on",
+    {
+      "tags": [
+        "@regression",
+        "@smoke",
+        "@skip",
+        "@wip"
+      ],
+      "patterns": [
+        "^@before",
+        "^@after"
+      ]
+    }
+  ],
+  "file-name": [
+    "on",
+    {
+      "style": "kebab-case"
+    }
+  ],
+  "indentation": [
+    "on",
+    {
+      "Feature": 0,
+      "Background": 4,
+      "Scenario": 4,
+      "Step": 8,
+      "Examples": 8,
+      "example": 12,
+      "given": 8,
+      "when": 8,
+      "then": 8,
+      "and": 8,
+      "but": 8,
+      "feature tag": 0,
+      "scenario tag": 4
+    }
+  ],
+  "max-scenarios-per-file": [
+    "on",
+    {
+      "maxScenarios": 10,
+      "countOutlineExamples": false
+    }
+  ],
+  "name-length": [
+    "on",
+    {
+      "Feature": 70,
+      "Scenario": 70,
+      "Step": 150
+    }
+  ],
+  "new-line-at-eof": [
+    "on",
+    "yes"
+  ],
+  "no-dupe-scenario-names": [
+    "on",
+    "in-feature"
+  ]
+}
