@@ -28,7 +28,7 @@ jobs:
       - name: "Run Cypress UI Tests"
         run: |
           cd frontend
-          npm run ga:feature
+          npm run ga:feature:record
       - name: "Upload UI Artifacts"
         if: success() || failure()
         uses: actions/upload-artifact@v3

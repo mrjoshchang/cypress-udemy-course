@@ -9,6 +9,12 @@ const addCucumberPreprocessorPlugin =
   require("@badeball/cypress-cucumber-preprocessor").addCucumberPreprocessorPlugin;
 
 module.exports = defineConfig({
+  projectId: "c4ax8t",
+  env: {
+    omitFiltered: true,
+    filterSpecs: true,
+    CYPRESS_RECORD_KEY: 123,
+  },
   e2e: {
     baseUrl: "http://localhost:3000/",
     chromeWebSecurity: false,

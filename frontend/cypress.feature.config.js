@@ -17,6 +17,7 @@ module.exports = defineConfig({
     baseUrl: "http://localhost:3000/",
     chromeWebSecurity: false,
     hideXHRInCommandLog: true,
+    projectId: "c4ax8t",
     numTestsKeptInMemory: 10,
     reporter: "mocha-junit-reporter",
     reporterOptions: {

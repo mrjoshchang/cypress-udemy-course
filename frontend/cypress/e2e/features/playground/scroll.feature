@@ -1,5 +1,6 @@
 Feature: Scroll
 
+    @regression
     Scenario: Scrolling around
         Given I am on the "playground" page
         When I click the "scroll" link
