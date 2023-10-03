@@ -31,33 +31,33 @@ jobs:
         run: |
           cd frontend
           npm run ga:feature:record
-      - name: "Upload UI Artifacts"
-        if: success() || failure()
-        uses: actions/upload-artifact@v3
-        with:
-          name: Cypress UI HTML Report
-          path: frontend/cypress/reports/report.html
-          retention-days: 1
-      - name: "Run Cypress API Tests"
-        run: |
-          cd frontend
-          npm run ga:cy
-      - name: "Upload API Artifacts"
-        if: success() || failure()
-        uses: actions/upload-artifact@v3
-        with:
-          name: Cypress API HTML Report
-          path: frontend/cypress/reports/mochawesome.html
-          retention-days: 1
-      - name: "Run Cypress Components Tests"
-        if: success() || failure()
-        run: |
-          cd frontend
-          npm run ga:component
-      - name: "Upload Component Artifacts"
-        if: success() || failure()
-        uses: actions/upload-artifact@v3
-        with:
-          name: Cypress Component HTML Report
-          path: frontend/cypress/reports/html/index.html
-          retention-days: 1
+      # - name: "Upload UI Artifacts"
+      #   if: success() || failure()
+      #   uses: actions/upload-artifact@v3
+      #   with:
+      #     name: Cypress UI HTML Report
+      #     path: frontend/cypress/reports/report.html
+      #     retention-days: 1
+      # - name: "Run Cypress API Tests"
+      #   run: |
+      #     cd frontend
+      #     npm run ga:cy
+      # - name: "Upload API Artifacts"
+      #   if: success() || failure()
+      #   uses: actions/upload-artifact@v3
+      #   with:
+      #     name: Cypress API HTML Report
+      #     path: frontend/cypress/reports/mochawesome.html
+      #     retention-days: 1
+      # - name: "Run Cypress Components Tests"
+      #   if: success() || failure()
+      #   run: |
+      #     cd frontend
+      #     npm run ga:component
+      # - name: "Upload Component Artifacts"
+      #   if: success() || failure()
+      #   uses: actions/upload-artifact@v3
+      #   with:
+      #     name: Cypress Component HTML Report
+      #     path: frontend/cypress/reports/html/index.html
+      #     retention-days: 1
