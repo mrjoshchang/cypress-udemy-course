@@ -4,6 +4,8 @@ on: push
 
 jobs:
   cypress-run:
+    env: # Or as an environment variable
+      cypress_key: ${{ secrets.CYPRESS_RECORD_KEY }}
     runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v3
@@ -28,7 +30,7 @@ jobs:
       - name: "Run Cypress UI Tests"
         run: |
           cd frontend
-          npm run ga:feature:record
+          npm run ga:feature:record --key "$cypress_key"
       - name: "Upload UI Artifacts"
         if: success() || failure()
         uses: actions/upload-artifact@v3

@@ -28,7 +28,7 @@
     "component": "npx cypress run --component -C cypress.comp.config.js",
     "CI": "",
     "ga:feature": "npm run prereport && cypress run --browser chrome -C cypress.feature.config.js",
-    "ga:feature:record": "npm run prereport && cypress run --browser chrome -C cypress.feature.config.js -e TAGS='@regression' --record --key ${{secrets.CYPRESS_RECORD_KEY}}",
+    "ga:feature:record": "npm run prereport && cypress run --browser chrome -C cypress.feature.config.js -e TAGS='@regression' --record",
     "ga:cy": "npm run prereport && cypress run --browser chrome -C cypress.cy.config.js && npm run merge-mochawesome && npm run json2html",
     "ga:component": "npm run prereport && cypress run --component -C cypress.comp.config.js",
     "PRE-REPORT CLEANUP": "",
