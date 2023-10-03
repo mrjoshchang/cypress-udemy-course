@@ -13,7 +13,6 @@ module.exports = defineConfig({
   env: {
     omitFiltered: true,
     filterSpecs: true,
-    CYPRESS_RECORD_KEY: 123,
   },
   e2e: {
     baseUrl: "http://localhost:3000/",
