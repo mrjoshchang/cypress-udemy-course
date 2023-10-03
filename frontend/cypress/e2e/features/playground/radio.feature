@@ -1,6 +1,5 @@
 Feature: Radio
 
-
     Scenario: Verify radio functions
         Given I am on the "playground" page
         And I click the "radio" link

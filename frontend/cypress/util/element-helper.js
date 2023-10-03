@@ -21,14 +21,14 @@ export function getElementLocator(elementKey, elementAlias = "elementLocator") {
               return commonMapping[elementKey].toString();
             } else {
               throw new Error(
-                `❌ There is no mapping for this element: "${elementKey}" in the "${mapFile}.json" file ❌`,
+                `❌ There is no mapping for this element: "${elementKey}" in the "${mapFile}.json" file ❌`
               );
             }
-          },
+          }
         );
       } else {
         throw new Error(
-          `❌ There is no mapping for this page: "${urlPath}" ❌`,
+          `❌ There is no mapping for this page: "${urlPath}" ❌`
         );
       }
     });

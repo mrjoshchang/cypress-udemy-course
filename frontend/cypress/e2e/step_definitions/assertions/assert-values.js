@@ -10,10 +10,10 @@ Then(
     cy.get("@elementLocator").then((element) => {
       cy.get(element).should(
         `${negate ? "not." : ""}contain.text`,
-        expectedString,
+        expectedString
       );
     });
-  },
+  }
 );
 
 Then(
@@ -28,7 +28,7 @@ Then(
         .eq(index)
         .should(`${negate ? "not." : ""}contain.text`, expectedString);
     });
-  },
+  }
 );
 
 Then(
@@ -40,10 +40,10 @@ Then(
     cy.get("@elementLocator").then((element) => {
       cy.get(element).should(
         `${negate ? "not." : ""}have.text`,
-        expectedString,
+        expectedString
       );
     });
-  },
+  }
 );
 
 Then(
@@ -58,7 +58,7 @@ Then(
         .eq(index)
         .should(`${negate ? "not." : ""}have.text`, expectedString);
     });
-  },
+  }
 );
 
 Then(
@@ -70,10 +70,10 @@ Then(
     cy.get("@elementLocator").then((element) => {
       cy.get(element).should(
         `${negate ? "not." : ""}have.value`,
-        expectedString,
+        expectedString
       );
     });
-  },
+  }
 );
 
 Then(
@@ -85,8 +85,8 @@ Then(
     cy.get("@elementLocator").then((element) => {
       cy.get(element).should(
         `${negate ? "not." : ""}contain.text`,
-        expectedString,
+        expectedString
       );
     });
-  },
+  }
 );

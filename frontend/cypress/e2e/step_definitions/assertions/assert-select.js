@@ -11,5 +11,5 @@ Then(
     cy.get("@elementLocator").then((element) => {
       cy.get(element).invoke("val").should("deep.equal", options);
     });
-  },
+  }
 );

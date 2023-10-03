@@ -11,7 +11,7 @@ When(
     cy.get("@elementLocator").then((element) => {
       cy.get(element).trigger(eventType);
     });
-  },
+  }
 );
 
 When(
@@ -33,5 +33,5 @@ When(
           throw Error(`❌Invalid event type: ${eventType}❌`);
       }
     });
-  },
+  }
 );

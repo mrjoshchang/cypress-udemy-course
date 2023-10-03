@@ -10,7 +10,7 @@ Then(
     cy.get("@elementLocator").then((element) => {
       cy.get(element).should(`${negate ? "not." : ""}be.enabled`);
     });
-  },
+  }
 );
 
 Then(
@@ -23,10 +23,10 @@ Then(
       cy.get(element).should(
         `${negate ? "not." : ""}have.css`,
         cssName,
-        cssValue,
+        cssValue
       );
     });
-  },
+  }
 );
 
 Then(
@@ -39,10 +39,10 @@ Then(
       cy.get(element).should(
         `${negate ? "not." : ""}have.prop`,
         propertyName,
-        propertyValue,
+        propertyValue
       );
     });
-  },
+  }
 );
 
 Then(
@@ -58,8 +58,8 @@ Then(
         .should(
           `${negate ? "not." : ""}have.prop`,
           propertyName,
-          propertyValue,
+          propertyValue
         );
     });
-  },
+  }
 );

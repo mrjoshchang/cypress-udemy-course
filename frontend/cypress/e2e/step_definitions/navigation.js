@@ -16,7 +16,7 @@ When(/^I am directed to the "([^"]*)" page$/, function (pageUrlPath) {
       });
     } catch {
       throw Error(
-        `❌ There is no page mapping for "${pageUrlPath}" in pages.json ❌`,
+        `❌ There is no page mapping for "${pageUrlPath}" in pages.json ❌`
       );
     }
   });
