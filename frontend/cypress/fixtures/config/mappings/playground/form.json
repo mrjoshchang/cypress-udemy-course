@@ -1,0 +1,11 @@
+{
+  "contact form": "div[id='root'] main form",
+  "First Name": "input#firstName",
+  "Last Name": "input#lastName",
+  "Email": "input#email",
+  "Clear": "button:contains('Clear')",
+  "Submit": "button[type='submit']",
+  "submitted first name": "p[data-cy='submittedFirstName']",
+  "submitted last name": "p[data-cy='submittedLastName']",
+  "submitted email": "p[data-cy='submittedEmail']"
+}

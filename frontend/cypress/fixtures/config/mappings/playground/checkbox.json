@@ -1,0 +1,6 @@
+{
+  "Option 1": "input[name='option1']",
+  "Option 2": "input[name='option2']",
+  "Option 3": "input[name='option3']",
+  "checked box": "h3 + ul li"
+}
