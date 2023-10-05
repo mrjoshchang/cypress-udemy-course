@@ -1,4 +1,4 @@
-describe("Tasks @regression", () => {
+describe("API stuff", () => {
   beforeEach(() => {
     cy.request("GET", "http://localhost:3001/playground/todos").then(
       ({ status, body }) => {

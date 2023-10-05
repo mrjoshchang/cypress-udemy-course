@@ -18,6 +18,10 @@ module.exports = defineConfig({
       openMode: 0,
     },
     specPattern: "**/*.cy.js",
+    excludeSpecPattern: [
+      "cypress/e2e/cy/accessibility.cy.js",
+      "cypress/e2e/cy/lighthouse.cy.js",
+    ],
     trashAssetsBeforeRuns: true,
     video: false,
     viewportHeight: 800,

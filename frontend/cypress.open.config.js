@@ -1,4 +1,8 @@
 const { defineConfig } = require("cypress");
+const { lighthouse, prepareAudit } = require("@cypress-audit/lighthouse");
+const fs = require("fs");
+var getDirName = require("path").dirname;
+
 const cucumber = require("cypress-cucumber-preprocessor").default;
 const createEsbuildPlugin =
   require("@badeball/cypress-cucumber-preprocessor/esbuild").createEsbuildPlugin;
@@ -22,7 +26,45 @@ module.exports = defineConfig({
 
     async setupNodeEvents(on, config) {
       // implement node event listeners here
-      on("file:preprocessor", cucumber()); //For cypress cucumber preprocessor
+      // cypress-axe
+      on("task", {
+        log(message) {
+          console.log(message);
+
+          return null;
+        },
+        table(message) {
+          console.table(message);
+
+          return null;
+        },
+      });
+      // cypress-audit/lighthouse
+      on("before:browser:launch", (browser = {}, launchOptions) => {
+        prepareAudit(launchOptions);
+      });
+
+      on("task", {
+        lighthouse: lighthouse((lighthouseReport) => {
+          console.log("---- Writing lighthouse report to disk ----");
+          console.log(lighthouseReport);
+          const path = `cypress/reports/lighthouse/${lighthouseReport.lhr.requestedUrl.replace(
+            "http://localhost:3000/",
+            ""
+          )}.html`;
+          fs.mkdir(getDirName(path), { recursive: true }, function (err) {
+            if (err) return cb(err);
+
+            fs.writeFile(path, lighthouseReport.report, (error) => {
+              error
+                ? console.log(error)
+                : console.log("Report created successfully");
+            });
+          });
+        }),
+      });
+      // For cypress cucumber preprocessor
+      on("file:preprocessor", cucumber());
       await addCucumberPreprocessorPlugin(on, config); // to allow json to be produced
       // To use esBuild for the bundler when preprocessing
       on(

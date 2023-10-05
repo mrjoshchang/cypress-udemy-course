@@ -70,10 +70,14 @@ Then(
     cy.contains("th", columnName)
       .invoke("index")
       .then((index) => {
-        cy.get(`table td:nth-child(${index + 1})`).should(($cells) => {
+        cy.get(`table td:nth-child(${index + 1})`).then(($cells) => {
           const names = Cypress._.map($cells, ($cell) => $cell.innerText);
-          if (sortType === "ascending") expect(names).to.be.ascending;
-          if (sortType === "descending") expect(names).to.be.descending;
+          if (sortType === "ascending") {
+            expect(names).to.be.ascending;
+          }
+          if (sortType === "descending") {
+            expect(names).to.be.descending;
+          }
         });
       });
   }
@@ -85,12 +89,16 @@ Then(
     cy.contains("th", columnName)
       .invoke("index")
       .then((index) => {
-        cy.get(`table td:nth-child(${index + 1})`).should(($cells) => {
+        cy.get(`table td:nth-child(${index + 1})`).then(($cells) => {
           const names = Cypress._.map($cells, ($cell) =>
             parseFloat($cell.innerText)
           );
-          if (sortType === "ascending") expect(names).to.be.ascending;
-          if (sortType === "descending") expect(names).to.be.descending;
+          if (sortType === "ascending") {
+            expect(names).to.be.ascending;
+          }
+          if (sortType === "descending") {
+            expect(names).to.be.descending;
+          }
         });
       });
   }
