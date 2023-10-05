@@ -26,9 +26,15 @@ jobs:
           cd ../frontend
           npm start &
       - name: "Run Cypress UI Tests"
+        env:
+          # Set up the Cypress Cloud project ID and record key as environment variables
+          # If the Actions secret EXAMPLE_PROJECT_ID is not defined then
+          # the projectId is taken from cypress.json (v9) or cypress.config.js (v10 and later).
+          # If the Actions secret EXAMPLE_RECORDING_KEY is not defined then recording jobs are skipped.
+          CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
         run: |
           cd frontend
-          npm run ga:feature:record
+          npm run ga:feature:record "$CYPRESS_RECORD_KEY"
       - name: "Upload UI Artifacts"
         if: success() || failure()
         uses: actions/upload-artifact@v3
