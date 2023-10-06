@@ -1,0 +1,6 @@
+{
+  "Go home": "button:contains('Go home')",
+  "Disabled": "button:contains('Disabled')",
+  "Double Click!": "button:contains('Double Click!')",
+  "Double Click response": "p[data-cy='dbClickedResponse']"
+}
