@@ -3,15 +3,6 @@ const { lighthouse, prepareAudit } = require("@cypress-audit/lighthouse");
 const fs = require("fs");
 var getDirName = require("path").dirname;
 
-const cucumber = require("cypress-cucumber-preprocessor").default;
-const createEsbuildPlugin =
-  require("@badeball/cypress-cucumber-preprocessor/esbuild").createEsbuildPlugin;
-const createBundler = require("@bahmutov/cypress-esbuild-preprocessor");
-const nodePolyfills =
-  require("@esbuild-plugins/node-modules-polyfill").NodeModulesPolyfillPlugin;
-const addCucumberPreprocessorPlugin =
-  require("@badeball/cypress-cucumber-preprocessor").addCucumberPreprocessorPlugin;
-
 module.exports = defineConfig({
   projectId: "c4ax8t",
   env: {
@@ -22,7 +13,9 @@ module.exports = defineConfig({
     baseUrl: "http://localhost:3000/",
     chromeWebSecurity: false,
     specPattern: "**/*.{feature,cy.js}",
-
+    screenshotsFolder: "cypress/snapshots/actual",
+    trashAssetsBeforeRuns: true,
+    video: false,
     async setupNodeEvents(on, config) {
       // implement node event listeners here
       // cypress-axe
@@ -46,7 +39,7 @@ module.exports = defineConfig({
       on("task", {
         lighthouse: lighthouse((lighthouseReport) => {
           console.log("---- Writing lighthouse report to disk ----");
-          console.log(lighthouseReport);
+          // console.log(lighthouseReport);
           const path = `cypress/reports/lighthouse/${lighthouseReport.lhr.requestedUrl.replace(
             "http://localhost:3000/",
             ""
@@ -62,25 +55,6 @@ module.exports = defineConfig({
           });
         }),
       });
-      // For cypress cucumber preprocessor
-      on("file:preprocessor", cucumber());
-      await addCucumberPreprocessorPlugin(on, config); // to allow json to be produced
-      // To use esBuild for the bundler when preprocessing
-      on(
-        "file:preprocessor",
-        createBundler({
-          plugins: [nodePolyfills(), createEsbuildPlugin(config)],
-        })
-      );
-      return config;
-    },
-  },
-
-  component: {
-    specPattern: "**/*.comp.js",
-    devServer: {
-      framework: "create-react-app",
-      bundler: "webpack",
     },
   },
 });
