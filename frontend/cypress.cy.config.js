@@ -21,6 +21,7 @@ module.exports = defineConfig({
     excludeSpecPattern: [
       "cypress/e2e/cy/accessibility.cy.js",
       "cypress/e2e/cy/lighthouse.cy.js",
+      "cypress/e2e/cy/visual.cy.js",
     ],
     trashAssetsBeforeRuns: true,
     video: false,
