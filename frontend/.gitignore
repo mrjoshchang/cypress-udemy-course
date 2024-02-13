@@ -1,5 +1,12 @@
 # dependencies
+downloads/
+mochawesome-report
 node_modules/
 reports/
 results/
-mochawesome-report
+cypress-visual-report/
+cypress-visual-screenshots/comparison/
+cypress-visual-screenshots/diff/
+cypress/screenshots/
+cypress/snapshots/actual
+cypress/snapshots/diff

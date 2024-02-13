@@ -1,0 +1,16 @@
+{
+  "alerts": "[data-cy='alerts']",
+  "attributes": "[data-cy='attributes']",
+  "buttons": "[data-cy='buttons']",
+  "checkbox": "[data-cy='checkbox']",
+  "downloads": "[data-cy='downloads']",
+  "dropdowns": "[data-cy='dropdowns']",
+  "form": "[data-cy='form']",
+  "iFrame": "[data-cy='iframe']",
+  "radio": "[data-cy='radio']",
+  "scroll": "[data-cy='scroll']",
+  "table": "[data-cy='table']",
+  "text": "[data-cy='text']",
+  "trigger": "[data-cy='trigger']",
+  "upload": "[data-cy='upload']"
+}

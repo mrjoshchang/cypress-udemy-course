@@ -1,0 +1,16 @@
+{
+  "Lyrics provided by Genius.com": "a[href='https://genius.com/Taylor-swift-all-too-well-10-minute-version-taylors-version-from-the-vault-lyrics']",
+  "Verse 1": "[data-cy='verse1']",
+  "Verse 2": "[data-cy='verse2']",
+  "Verse 3": "[data-cy='verse3']",
+  "Verse 4": "[data-cy='verse4']",
+  "Verse 5": "[data-cy='verse5']",
+  "Verse 6": "[data-cy='verse6']",
+  "Chorus 1": "[data-cy='chorus1']",
+  "Chorus 2": "[data-cy='chorus2']",
+  "Chorus 3": "[data-cy='chorus3']",
+  "Bridge": "[data-cy='bridge']",
+  "Pre-Chorus 1": "[data-cy='pre-chorus1']",
+  "Pre-Chorus 2": "[data-cy='pre-chorus2']",
+  "Outro": "[data-cy='outro']"
+}
